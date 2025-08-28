@@ -107,12 +107,12 @@ const AIGame = () => {
         <div className="container mx-auto px-4 py-8">
           <Card className="max-w-2xl mx-auto card-gradient shadow-elegant">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-bold mb-4">Game Complete! 🎉</CardTitle>
+              <CardTitle className="text-2xl font-bold mb-4">Survey Complete! 🎉</CardTitle>
               <div className={`text-4xl font-bold ${getScoreColor()}`}>
                 {score} / {aiNewsData.length}
               </div>
               <p className="text-muted-foreground mt-2">
-                You correctly identified the impact of {score} out of {aiNewsData.length} AI news stories
+                You matched expert consensus on {score} out of {aiNewsData.length} AI developments
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -138,8 +138,8 @@ const AIGame = () => {
               </div>
               
               <div className="text-center pt-4">
-                <Button onClick={resetGame} variant="hero" size="lg">
-                  Play Again
+                <Button onClick={resetGame} variant="secondary" size="lg">
+                  Take Survey Again
                 </Button>
               </div>
             </CardContent>
@@ -156,9 +156,9 @@ const AIGame = () => {
       {/* Header */}
       <div className="hero-gradient py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-primary-foreground mb-4">AI Impact Game</h1>
+          <h1 className="text-4xl font-bold text-primary-foreground mb-4">AI Impact Survey</h1>
           <p className="text-xl text-primary-foreground opacity-90">
-            Test your ability to identify positive vs negative AI impacts
+            Help us understand community sentiment about AI developments
           </p>
           <div className="mt-4 flex items-center justify-center space-x-4">
             <Badge variant="secondary" className="text-sm">

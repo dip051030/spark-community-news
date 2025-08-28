@@ -48,7 +48,7 @@ const Navigation = () => {
             >
               <Link to="/ai-game">
                 <GamepadIcon className="w-4 h-4 mr-2" />
-                AI News Game
+                Survey
               </Link>
             </Button>
           </div>

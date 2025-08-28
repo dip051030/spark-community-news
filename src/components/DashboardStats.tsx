@@ -3,31 +3,31 @@ import { Users, MessageSquare, Calendar, DollarSign } from 'lucide-react';
 
 const stats = [
   {
-    title: 'Total Attendees',
-    value: '1,234',
+    title: 'Total Survey Responses',
+    value: '456',
     icon: Users,
+    change: '+18%',
+    changeType: 'positive' as const,
+  },
+  {
+    title: 'Correct Predictions',
+    value: '342',
+    icon: MessageSquare,
     change: '+12%',
     changeType: 'positive' as const,
   },
   {
-    title: 'Survey Responses',
-    value: '892',
-    icon: MessageSquare,
-    change: '+8%',
-    changeType: 'positive' as const,
-  },
-  {
-    title: 'Events This Month',
-    value: '15',
+    title: 'Average Score',
+    value: '4.2/6',
     icon: Calendar,
-    change: '+3',
+    change: '+0.3',
     changeType: 'positive' as const,
   },
   {
-    title: 'Budget Collected',
-    value: '$12,450',
+    title: 'Accuracy Rate',
+    value: '75%',
     icon: DollarSign,
-    change: '+23%',
+    change: '+5%',
     changeType: 'positive' as const,
   },
 ];
