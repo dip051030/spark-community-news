@@ -34,20 +34,23 @@ const stats = [
 
 const DashboardStats = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       {stats.map((stat) => {
         const Icon = stat.icon;
         return (
-          <Card key={stat.title} className="card-gradient shadow-card transition-smooth hover:shadow-elegant">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">
+          <Card key={stat.title} className="card-gradient shadow-card interactive-card border-0">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
+              <CardTitle className="text-sm font-medium text-muted-foreground font-sans">
                 {stat.title}
               </CardTitle>
-              <Icon className="h-4 w-4 text-primary" />
+              <div className="p-2 rounded-lg bg-primary/10">
+                <Icon className="h-5 w-5 text-primary" />
+              </div>
             </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold text-foreground">{stat.value}</div>
-              <p className="text-xs text-success mt-1">
+            <CardContent className="pt-0">
+              <div className="text-3xl font-display font-bold text-foreground mb-2">{stat.value}</div>
+              <p className="text-sm font-medium text-success flex items-center gap-1">
+                <span className="text-success">↗</span>
                 {stat.change} from last month
               </p>
             </CardContent>
